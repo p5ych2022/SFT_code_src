@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pay Bill</title>
+</head>
+<body>
+    <h1>Pay {{ bill.bill_type.name }} Bill</h1>
+    <p>Amount: ${{ bill.amount }}</p>
+    <form method="post">
+        {% csrf_token %}
+        <label for="payment_method">Choose Payment Method:</label>
+        <select name="payment_method" id="payment_method">
+            {% for method in payment_methods %}
+                <option value="{{ method.id }}">{{ method.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Pay</button>
+    </form>
+</body>
+</html>

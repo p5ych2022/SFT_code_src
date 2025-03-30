@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Edit Bill Type</title>
+</head>
+<body>
+    <h1>Edit Bill Type</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label>Name:</label>
+        <input type="text" name="name" value="{{ bill_type.name }}" required>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
