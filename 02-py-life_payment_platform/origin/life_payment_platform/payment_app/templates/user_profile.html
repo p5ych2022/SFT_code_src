@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Your Profile</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label>Phone Number:</label>
+        <input type="text" name="phone_number" value="{{ request.user.phone_number }}"><br>
+        <!-- Add more fields for user details here -->
+        <button type="submit">Save</button>
+    </form>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>

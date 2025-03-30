@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bill List</title>
+</head>
+<body>
+    <h1>Your Bills</h1>
+    <ul>
+        {% for bill in bills %}
+            <li>{{ bill.bill_type.name }} - ${{ bill.amount }} - Due: {{ bill.due_date }}
+                <a href="{% url 'pay_bill' bill.id %}">Pay</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

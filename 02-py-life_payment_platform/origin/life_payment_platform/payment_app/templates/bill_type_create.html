@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Create Bill Type</title>
+</head>
+<body>
+    <h1>Create a New Bill Type</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
