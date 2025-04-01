@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>System Metrics</title>
+</head>
+<body>
+    <h1>Recent System Metrics</h1>
+    <table border="1">
+        <tr>
+            <th>Timestamp</th>
+            <th>CPU Usage (%)</th>
+            <th>Memory Usage (%)</th>
+        </tr>
+        {% for row in metrics %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br/>
+    <a href="/ui">Return to Overview</a>
+</body>
+</html>

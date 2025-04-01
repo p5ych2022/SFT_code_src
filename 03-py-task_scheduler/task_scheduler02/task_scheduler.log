@@ -1,0 +1,488 @@
+2025-04-01 16:34:58,244 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 16:49:57,090 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 16:50:57,447 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 16:53:37,481 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 16:53:37,482 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 16:53:37,482 - INFO - Scheduler started
+2025-04-01 16:53:39,860 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 16:53:39,861 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 16:53:39,863 - INFO -  * Restarting with stat
+2025-04-01 16:53:40,184 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 16:53:40,184 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 16:53:40,184 - INFO - Scheduler started
+2025-04-01 16:53:40,205 - WARNING -  * Debugger is active!
+2025-04-01 16:53:40,236 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 16:54:08,422 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:08] "GET /ui HTTP/1.1" 200 -
+2025-04-01 16:54:08,504 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 16:54:37,487 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:54:37 CST)" (scheduled at 2025-04-01 16:54:37.481869+08:00)
+2025-04-01 16:54:38,493 - INFO - System CPU Usage: 24.3%, Memory Usage: 73.0%
+2025-04-01 16:54:38,501 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:55:37 CST)" executed successfully
+2025-04-01 16:54:40,185 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:54:40 CST)" (scheduled at 2025-04-01 16:54:40.183960+08:00)
+2025-04-01 16:54:41,191 - INFO - System CPU Usage: 25.6%, Memory Usage: 72.9%
+2025-04-01 16:54:41,198 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:55:40 CST)" executed successfully
+2025-04-01 16:54:59,335 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:59] "[31m[1mGET /ui/tasks HTTP/1.1[0m" 401 -
+2025-04-01 16:54:59,359 - INFO - 127.0.0.1 - - [01/Apr/2025 16:54:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 16:55:01,674 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 16:55:07,076 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:07] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-04-01 16:55:26,657 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:26] "[33mGET /ui/login HTTP/1.1[0m" 404 -
+2025-04-01 16:55:26,707 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 16:55:37,487 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:56:37 CST)" (scheduled at 2025-04-01 16:55:37.481869+08:00)
+2025-04-01 16:55:38,489 - INFO - System CPU Usage: 19.5%, Memory Usage: 72.2%
+2025-04-01 16:55:38,491 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:56:37 CST)" executed successfully
+2025-04-01 16:55:40,186 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:56:40 CST)" (scheduled at 2025-04-01 16:55:40.183960+08:00)
+2025-04-01 16:55:41,168 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:41] "[33mGET /ui/ HTTP/1.1[0m" 404 -
+2025-04-01 16:55:41,190 - INFO - System CPU Usage: 22.2%, Memory Usage: 72.9%
+2025-04-01 16:55:41,205 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:56:40 CST)" executed successfully
+2025-04-01 16:55:44,610 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:44] "GET /ui HTTP/1.1" 200 -
+2025-04-01 16:55:47,687 - INFO - 127.0.0.1 - - [01/Apr/2025 16:55:47] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-04-01 16:56:17,440 - INFO - 127.0.0.1 - - [01/Apr/2025 16:56:17] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-04-01 16:56:37,483 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:57:37 CST)" (scheduled at 2025-04-01 16:56:37.481869+08:00)
+2025-04-01 16:56:38,488 - INFO - System CPU Usage: 18.9%, Memory Usage: 72.2%
+2025-04-01 16:56:38,491 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:57:37 CST)" executed successfully
+2025-04-01 16:56:40,188 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:57:40 CST)" (scheduled at 2025-04-01 16:56:40.183960+08:00)
+2025-04-01 16:56:41,191 - INFO - System CPU Usage: 13.7%, Memory Usage: 71.8%
+2025-04-01 16:56:41,195 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:57:40 CST)" executed successfully
+2025-04-01 16:56:58,435 - INFO - 127.0.0.1 - - [01/Apr/2025 16:56:58] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-04-01 16:57:02,486 - INFO - 127.0.0.1 - - [01/Apr/2025 16:57:02] "[31m[1mPOST /login HTTP/1.1[0m" 415 -
+2025-04-01 16:57:33,936 - INFO - 127.0.0.1 - - [01/Apr/2025 16:57:33] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2025-04-01 16:57:37,487 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:58:37 CST)" (scheduled at 2025-04-01 16:57:37.481869+08:00)
+2025-04-01 16:57:38,488 - INFO - System CPU Usage: 36.6%, Memory Usage: 71.8%
+2025-04-01 16:57:38,492 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:58:37 CST)" executed successfully
+2025-04-01 16:57:40,188 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:58:40 CST)" (scheduled at 2025-04-01 16:57:40.183960+08:00)
+2025-04-01 16:57:41,191 - INFO - System CPU Usage: 23.2%, Memory Usage: 72.0%
+2025-04-01 16:57:41,194 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:58:40 CST)" executed successfully
+2025-04-01 16:57:55,390 - INFO - 127.0.0.1 - - [01/Apr/2025 16:57:55] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2025-04-01 16:58:37,486 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:59:37 CST)" (scheduled at 2025-04-01 16:58:37.481869+08:00)
+2025-04-01 16:58:38,492 - INFO - System CPU Usage: 23.3%, Memory Usage: 73.4%
+2025-04-01 16:58:38,497 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:59:37 CST)" executed successfully
+2025-04-01 16:58:40,185 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:59:40 CST)" (scheduled at 2025-04-01 16:58:40.183960+08:00)
+2025-04-01 16:58:41,189 - INFO - System CPU Usage: 20.3%, Memory Usage: 73.6%
+2025-04-01 16:58:41,195 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 16:59:40 CST)" executed successfully
+2025-04-01 16:59:37,484 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:00:37 CST)" (scheduled at 2025-04-01 16:59:37.481869+08:00)
+2025-04-01 16:59:38,491 - INFO - System CPU Usage: 19.9%, Memory Usage: 74.0%
+2025-04-01 16:59:38,497 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:00:37 CST)" executed successfully
+2025-04-01 16:59:40,187 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:00:40 CST)" (scheduled at 2025-04-01 16:59:40.183960+08:00)
+2025-04-01 16:59:41,189 - INFO - System CPU Usage: 12.7%, Memory Usage: 73.1%
+2025-04-01 16:59:41,197 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:00:40 CST)" executed successfully
+2025-04-01 16:59:47,736 - INFO - 127.0.0.1 - - [01/Apr/2025 16:59:47] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2025-04-01 16:59:56,147 - INFO - 127.0.0.1 - - [01/Apr/2025 16:59:56] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-01 17:00:05,006 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:05] "POST /login HTTP/1.1" 200 -
+2025-04-01 17:00:14,271 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:14] "POST /login HTTP/1.1" 200 -
+2025-04-01 17:00:14,302 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:00:17,541 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:17] "GET /ui HTTP/1.1" 200 -
+2025-04-01 17:00:17,579 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:00:19,093 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:19] "[31m[1mGET /ui/tasks HTTP/1.1[0m" 401 -
+2025-04-01 17:00:19,112 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:00:21,858 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:00:23,046 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:23] "[31m[1mGET /ui/metrics HTTP/1.1[0m" 401 -
+2025-04-01 17:00:23,059 - INFO - 127.0.0.1 - - [01/Apr/2025 17:00:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:00:37,485 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:01:37 CST)" (scheduled at 2025-04-01 17:00:37.481869+08:00)
+2025-04-01 17:00:38,493 - INFO - System CPU Usage: 32.6%, Memory Usage: 74.4%
+2025-04-01 17:00:38,498 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:01:37 CST)" executed successfully
+2025-04-01 17:00:40,189 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:01:40 CST)" (scheduled at 2025-04-01 17:00:40.183960+08:00)
+2025-04-01 17:00:41,196 - INFO - System CPU Usage: 23.0%, Memory Usage: 73.9%
+2025-04-01 17:00:41,204 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:01:40 CST)" executed successfully
+2025-04-01 17:01:33,073 - INFO - 127.0.0.1 - - [01/Apr/2025 17:01:33] "[31m[1mGET /ui/tasks HTTP/1.1[0m" 401 -
+2025-04-01 17:01:33,095 - INFO - 127.0.0.1 - - [01/Apr/2025 17:01:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:01:37,487 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:02:37 CST)" (scheduled at 2025-04-01 17:01:37.481869+08:00)
+2025-04-01 17:01:38,492 - INFO - System CPU Usage: 21.9%, Memory Usage: 74.0%
+2025-04-01 17:01:38,497 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:02:37 CST)" executed successfully
+2025-04-01 17:01:39,575 - INFO - 127.0.0.1 - - [01/Apr/2025 17:01:39] "GET /ui HTTP/1.1" 200 -
+2025-04-01 17:01:40,190 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:02:40 CST)" (scheduled at 2025-04-01 17:01:40.183960+08:00)
+2025-04-01 17:01:40,853 - INFO - 127.0.0.1 - - [01/Apr/2025 17:01:40] "[31m[1mGET /ui/tasks HTTP/1.1[0m" 401 -
+2025-04-01 17:01:40,881 - INFO - 127.0.0.1 - - [01/Apr/2025 17:01:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:01:41,194 - INFO - System CPU Usage: 34.7%, Memory Usage: 74.0%
+2025-04-01 17:01:41,199 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:02:40 CST)" executed successfully
+2025-04-01 17:02:37,482 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:03:37 CST)" (scheduled at 2025-04-01 17:02:37.481869+08:00)
+2025-04-01 17:02:38,484 - INFO - System CPU Usage: 18.6%, Memory Usage: 72.8%
+2025-04-01 17:02:38,488 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:03:37 CST)" executed successfully
+2025-04-01 17:02:40,188 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:03:40 CST)" (scheduled at 2025-04-01 17:02:40.183960+08:00)
+2025-04-01 17:02:41,189 - INFO - System CPU Usage: 13.2%, Memory Usage: 72.8%
+2025-04-01 17:02:41,190 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:03:40 CST)" executed successfully
+2025-04-01 17:03:37,483 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:04:37 CST)" (scheduled at 2025-04-01 17:03:37.481869+08:00)
+2025-04-01 17:03:38,487 - INFO - System CPU Usage: 24.2%, Memory Usage: 72.7%
+2025-04-01 17:03:38,490 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:04:37 CST)" executed successfully
+2025-04-01 17:03:40,186 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:04:40 CST)" (scheduled at 2025-04-01 17:03:40.183960+08:00)
+2025-04-01 17:03:41,189 - INFO - System CPU Usage: 16.8%, Memory Usage: 73.4%
+2025-04-01 17:03:41,191 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:04:40 CST)" executed successfully
+2025-04-01 17:03:46,283 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/app.py', reloading
+2025-04-01 17:03:46,341 - INFO -  * Restarting with stat
+2025-04-01 17:03:46,743 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:03:46,744 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:03:46,744 - INFO - Scheduler started
+2025-04-01 17:03:46,774 - WARNING -  * Debugger is active!
+2025-04-01 17:03:46,804 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 17:04:12,282 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:04:12,283 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:04:12,283 - INFO - Scheduler started
+2025-04-01 17:04:12,322 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 17:04:12,322 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 17:04:12,323 - INFO -  * Restarting with stat
+2025-04-01 17:04:12,641 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:04:12,642 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:04:12,642 - INFO - Scheduler started
+2025-04-01 17:04:12,662 - WARNING -  * Debugger is active!
+2025-04-01 17:04:12,671 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 17:04:16,837 - INFO - 127.0.0.1 - - [01/Apr/2025 17:04:16] "[35m[1mGET /ui/tasks HTTP/1.1[0m" 500 -
+2025-04-01 17:04:16,888 - INFO - 127.0.0.1 - - [01/Apr/2025 17:04:16] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-01 17:04:16,889 - INFO - 127.0.0.1 - - [01/Apr/2025 17:04:16] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-01 17:04:16,913 - INFO - 127.0.0.1 - - [01/Apr/2025 17:04:16] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-01 17:04:16,946 - INFO - 127.0.0.1 - - [01/Apr/2025 17:04:16] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=console.png&s=56XQElgc17qZ02rBI8wq HTTP/1.1" 200 -
+2025-04-01 17:04:38,146 - INFO - 127.0.0.1 - - [01/Apr/2025 17:04:38] "GET /ui/metrics HTTP/1.1" 200 -
+2025-04-01 17:05:04,178 - INFO - 127.0.0.1 - - [01/Apr/2025 17:05:04] "GET /ui HTTP/1.1" 200 -
+2025-04-01 17:05:05,608 - INFO - 127.0.0.1 - - [01/Apr/2025 17:05:05] "[35m[1mGET /ui/tasks HTTP/1.1[0m" 500 -
+2025-04-01 17:05:05,634 - INFO - 127.0.0.1 - - [01/Apr/2025 17:05:05] "[36mGET /ui/tasks?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-01 17:05:05,635 - INFO - 127.0.0.1 - - [01/Apr/2025 17:05:05] "[36mGET /ui/tasks?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-01 17:05:05,682 - INFO - 127.0.0.1 - - [01/Apr/2025 17:05:05] "[36mGET /ui/tasks?__debugger__=yes&cmd=resource&f=console.png&s=56XQElgc17qZ02rBI8wq HTTP/1.1[0m" 304 -
+2025-04-01 17:05:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:05:12 CST)" (scheduled at 2025-04-01 17:05:12.282655+08:00)
+2025-04-01 17:05:12,648 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:05:12 CST)" (scheduled at 2025-04-01 17:05:12.641862+08:00)
+2025-04-01 17:05:13,292 - INFO - System CPU Usage: 16.5%, Memory Usage: 73.7%
+2025-04-01 17:05:13,310 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:06:12 CST)" executed successfully
+2025-04-01 17:05:13,652 - INFO - System CPU Usage: 17.1%, Memory Usage: 73.7%
+2025-04-01 17:05:13,654 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:06:12 CST)" executed successfully
+2025-04-01 17:06:12,283 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:07:12 CST)" (scheduled at 2025-04-01 17:06:12.282655+08:00)
+2025-04-01 17:06:12,642 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:07:12 CST)" (scheduled at 2025-04-01 17:06:12.641862+08:00)
+2025-04-01 17:06:13,287 - INFO - System CPU Usage: 22.7%, Memory Usage: 73.2%
+2025-04-01 17:06:13,294 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:07:12 CST)" executed successfully
+2025-04-01 17:06:13,647 - INFO - System CPU Usage: 22.7%, Memory Usage: 73.4%
+2025-04-01 17:06:13,650 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:07:12 CST)" executed successfully
+2025-04-01 17:07:12,286 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:08:12 CST)" (scheduled at 2025-04-01 17:07:12.282655+08:00)
+2025-04-01 17:07:12,643 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:08:12 CST)" (scheduled at 2025-04-01 17:07:12.641862+08:00)
+2025-04-01 17:07:13,292 - INFO - System CPU Usage: 74.3%, Memory Usage: 75.0%
+2025-04-01 17:07:13,305 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:08:12 CST)" executed successfully
+2025-04-01 17:07:13,648 - INFO - System CPU Usage: 48.7%, Memory Usage: 75.0%
+2025-04-01 17:07:13,651 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:08:12 CST)" executed successfully
+2025-04-01 17:08:04,850 - INFO - 127.0.0.1 - - [01/Apr/2025 17:08:04] "GET /ui/tasks HTTP/1.1" 200 -
+2025-04-01 17:08:12,288 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:09:12 CST)" (scheduled at 2025-04-01 17:08:12.282655+08:00)
+2025-04-01 17:08:12,644 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:09:12 CST)" (scheduled at 2025-04-01 17:08:12.641862+08:00)
+2025-04-01 17:08:13,294 - INFO - System CPU Usage: 20.3%, Memory Usage: 74.1%
+2025-04-01 17:08:13,297 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:09:12 CST)" executed successfully
+2025-04-01 17:08:13,649 - INFO - System CPU Usage: 20.9%, Memory Usage: 74.1%
+2025-04-01 17:08:13,651 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:09:12 CST)" executed successfully
+2025-04-01 17:08:34,569 - INFO - 127.0.0.1 - - [01/Apr/2025 17:08:34] "GET /ui HTTP/1.1" 200 -
+2025-04-01 17:08:35,984 - INFO - 127.0.0.1 - - [01/Apr/2025 17:08:35] "GET /ui/tasks HTTP/1.1" 200 -
+2025-04-01 17:09:12,285 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:10:12 CST)" (scheduled at 2025-04-01 17:09:12.282655+08:00)
+2025-04-01 17:09:12,647 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:10:12 CST)" (scheduled at 2025-04-01 17:09:12.641862+08:00)
+2025-04-01 17:09:13,290 - INFO - System CPU Usage: 18.3%, Memory Usage: 73.1%
+2025-04-01 17:09:13,300 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:10:12 CST)" executed successfully
+2025-04-01 17:09:13,652 - INFO - System CPU Usage: 18.3%, Memory Usage: 73.1%
+2025-04-01 17:09:13,654 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:10:12 CST)" executed successfully
+2025-04-01 17:10:12,292 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:11:12 CST)" (scheduled at 2025-04-01 17:10:12.282655+08:00)
+2025-04-01 17:10:12,649 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:11:12 CST)" (scheduled at 2025-04-01 17:10:12.641862+08:00)
+2025-04-01 17:10:13,299 - INFO - System CPU Usage: 27.3%, Memory Usage: 73.7%
+2025-04-01 17:10:13,302 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:11:12 CST)" executed successfully
+2025-04-01 17:10:13,653 - INFO - System CPU Usage: 23.9%, Memory Usage: 73.7%
+2025-04-01 17:10:13,657 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:11:12 CST)" executed successfully
+2025-04-01 17:11:12,288 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:12:12 CST)" (scheduled at 2025-04-01 17:11:12.282655+08:00)
+2025-04-01 17:11:12,645 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:12:12 CST)" (scheduled at 2025-04-01 17:11:12.641862+08:00)
+2025-04-01 17:11:13,292 - INFO - System CPU Usage: 29.2%, Memory Usage: 74.5%
+2025-04-01 17:11:13,297 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:12:12 CST)" executed successfully
+2025-04-01 17:11:13,649 - INFO - System CPU Usage: 27.5%, Memory Usage: 74.6%
+2025-04-01 17:11:13,652 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:12:12 CST)" executed successfully
+2025-04-01 17:12:12,286 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:13:12 CST)" (scheduled at 2025-04-01 17:12:12.282655+08:00)
+2025-04-01 17:12:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:13:12 CST)" (scheduled at 2025-04-01 17:12:12.641862+08:00)
+2025-04-01 17:12:13,290 - INFO - System CPU Usage: 23.5%, Memory Usage: 71.0%
+2025-04-01 17:12:13,293 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:13:12 CST)" executed successfully
+2025-04-01 17:12:13,649 - INFO - System CPU Usage: 25.9%, Memory Usage: 71.0%
+2025-04-01 17:12:13,652 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:13:12 CST)" executed successfully
+2025-04-01 17:13:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:14:12 CST)" (scheduled at 2025-04-01 17:13:12.282655+08:00)
+2025-04-01 17:13:12,647 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:14:12 CST)" (scheduled at 2025-04-01 17:13:12.641862+08:00)
+2025-04-01 17:13:13,292 - INFO - System CPU Usage: 28.9%, Memory Usage: 72.6%
+2025-04-01 17:13:13,293 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:14:12 CST)" executed successfully
+2025-04-01 17:13:13,652 - INFO - System CPU Usage: 28.9%, Memory Usage: 72.3%
+2025-04-01 17:13:13,654 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:14:12 CST)" executed successfully
+2025-04-01 17:14:12,284 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:15:12 CST)" (scheduled at 2025-04-01 17:14:12.282655+08:00)
+2025-04-01 17:14:12,645 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:15:12 CST)" (scheduled at 2025-04-01 17:14:12.641862+08:00)
+2025-04-01 17:14:13,290 - INFO - System CPU Usage: 15.0%, Memory Usage: 71.3%
+2025-04-01 17:14:13,294 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:15:12 CST)" executed successfully
+2025-04-01 17:14:13,649 - INFO - System CPU Usage: 19.2%, Memory Usage: 71.8%
+2025-04-01 17:14:13,651 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:15:12 CST)" executed successfully
+2025-04-01 17:15:12,286 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:16:12 CST)" (scheduled at 2025-04-01 17:15:12.282655+08:00)
+2025-04-01 17:15:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:16:12 CST)" (scheduled at 2025-04-01 17:15:12.641862+08:00)
+2025-04-01 17:15:13,295 - INFO - System CPU Usage: 18.0%, Memory Usage: 71.2%
+2025-04-01 17:15:13,305 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:16:12 CST)" executed successfully
+2025-04-01 17:15:13,649 - INFO - System CPU Usage: 16.6%, Memory Usage: 71.2%
+2025-04-01 17:15:13,661 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:16:12 CST)" executed successfully
+2025-04-01 17:16:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:17:12 CST)" (scheduled at 2025-04-01 17:16:12.282655+08:00)
+2025-04-01 17:16:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:17:12 CST)" (scheduled at 2025-04-01 17:16:12.641862+08:00)
+2025-04-01 17:16:13,293 - INFO - System CPU Usage: 23.2%, Memory Usage: 71.7%
+2025-04-01 17:16:13,299 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:17:12 CST)" executed successfully
+2025-04-01 17:16:13,659 - INFO - System CPU Usage: 18.0%, Memory Usage: 71.6%
+2025-04-01 17:16:13,662 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:17:12 CST)" executed successfully
+2025-04-01 17:17:12,286 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:18:12 CST)" (scheduled at 2025-04-01 17:17:12.282655+08:00)
+2025-04-01 17:17:12,645 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:18:12 CST)" (scheduled at 2025-04-01 17:17:12.641862+08:00)
+2025-04-01 17:17:13,292 - INFO - System CPU Usage: 18.3%, Memory Usage: 71.8%
+2025-04-01 17:17:13,298 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:18:12 CST)" executed successfully
+2025-04-01 17:17:13,649 - INFO - System CPU Usage: 16.7%, Memory Usage: 71.8%
+2025-04-01 17:17:13,658 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:18:12 CST)" executed successfully
+2025-04-01 17:18:12,291 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:19:12 CST)" (scheduled at 2025-04-01 17:18:12.282655+08:00)
+2025-04-01 17:18:12,645 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:19:12 CST)" (scheduled at 2025-04-01 17:18:12.641862+08:00)
+2025-04-01 17:18:13,294 - INFO - System CPU Usage: 23.4%, Memory Usage: 70.7%
+2025-04-01 17:18:13,301 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:19:12 CST)" executed successfully
+2025-04-01 17:18:13,651 - INFO - System CPU Usage: 21.9%, Memory Usage: 70.7%
+2025-04-01 17:18:13,656 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:19:12 CST)" executed successfully
+2025-04-01 17:19:12,286 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:20:12 CST)" (scheduled at 2025-04-01 17:19:12.282655+08:00)
+2025-04-01 17:19:12,643 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:20:12 CST)" (scheduled at 2025-04-01 17:19:12.641862+08:00)
+2025-04-01 17:19:13,290 - INFO - System CPU Usage: 19.5%, Memory Usage: 71.1%
+2025-04-01 17:19:13,294 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:20:12 CST)" executed successfully
+2025-04-01 17:19:13,649 - INFO - System CPU Usage: 19.5%, Memory Usage: 71.1%
+2025-04-01 17:19:13,651 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:20:12 CST)" executed successfully
+2025-04-01 17:20:12,289 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:21:12 CST)" (scheduled at 2025-04-01 17:20:12.282655+08:00)
+2025-04-01 17:20:12,644 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:21:12 CST)" (scheduled at 2025-04-01 17:20:12.641862+08:00)
+2025-04-01 17:20:13,292 - INFO - System CPU Usage: 25.9%, Memory Usage: 71.1%
+2025-04-01 17:20:13,300 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:21:12 CST)" executed successfully
+2025-04-01 17:20:13,650 - INFO - System CPU Usage: 30.1%, Memory Usage: 71.1%
+2025-04-01 17:20:13,653 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:21:12 CST)" executed successfully
+2025-04-01 17:21:12,288 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:22:12 CST)" (scheduled at 2025-04-01 17:21:12.282655+08:00)
+2025-04-01 17:21:12,645 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:22:12 CST)" (scheduled at 2025-04-01 17:21:12.641862+08:00)
+2025-04-01 17:21:13,291 - INFO - System CPU Usage: 16.8%, Memory Usage: 71.0%
+2025-04-01 17:21:13,294 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:22:12 CST)" executed successfully
+2025-04-01 17:21:13,648 - INFO - System CPU Usage: 29.5%, Memory Usage: 71.2%
+2025-04-01 17:21:13,653 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:22:12 CST)" executed successfully
+2025-04-01 17:22:12,289 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:23:12 CST)" (scheduled at 2025-04-01 17:22:12.282655+08:00)
+2025-04-01 17:22:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:23:12 CST)" (scheduled at 2025-04-01 17:22:12.641862+08:00)
+2025-04-01 17:22:13,295 - INFO - System CPU Usage: 40.4%, Memory Usage: 71.0%
+2025-04-01 17:22:13,298 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:23:12 CST)" executed successfully
+2025-04-01 17:22:13,652 - INFO - System CPU Usage: 40.4%, Memory Usage: 71.1%
+2025-04-01 17:22:13,653 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:23:12 CST)" executed successfully
+2025-04-01 17:23:12,291 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:24:12 CST)" (scheduled at 2025-04-01 17:23:12.282655+08:00)
+2025-04-01 17:23:12,659 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:24:12 CST)" (scheduled at 2025-04-01 17:23:12.641862+08:00)
+2025-04-01 17:23:13,295 - INFO - System CPU Usage: 24.3%, Memory Usage: 70.1%
+2025-04-01 17:23:13,317 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:24:12 CST)" executed successfully
+2025-04-01 17:23:13,663 - INFO - System CPU Usage: 24.9%, Memory Usage: 70.1%
+2025-04-01 17:23:13,667 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:24:12 CST)" executed successfully
+2025-04-01 17:24:12,290 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:25:12 CST)" (scheduled at 2025-04-01 17:24:12.282655+08:00)
+2025-04-01 17:24:12,644 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:25:12 CST)" (scheduled at 2025-04-01 17:24:12.641862+08:00)
+2025-04-01 17:24:13,296 - INFO - System CPU Usage: 49.0%, Memory Usage: 70.0%
+2025-04-01 17:24:13,312 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:25:12 CST)" executed successfully
+2025-04-01 17:24:13,650 - INFO - System CPU Usage: 49.0%, Memory Usage: 70.0%
+2025-04-01 17:24:13,655 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:25:12 CST)" executed successfully
+2025-04-01 17:25:12,288 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:26:12 CST)" (scheduled at 2025-04-01 17:25:12.282655+08:00)
+2025-04-01 17:25:12,649 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:26:12 CST)" (scheduled at 2025-04-01 17:25:12.641862+08:00)
+2025-04-01 17:25:13,293 - INFO - System CPU Usage: 19.1%, Memory Usage: 70.8%
+2025-04-01 17:25:13,297 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:26:12 CST)" executed successfully
+2025-04-01 17:25:13,650 - INFO - System CPU Usage: 18.8%, Memory Usage: 70.9%
+2025-04-01 17:25:13,656 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:26:12 CST)" executed successfully
+2025-04-01 17:26:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:27:12 CST)" (scheduled at 2025-04-01 17:26:12.282655+08:00)
+2025-04-01 17:26:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:27:12 CST)" (scheduled at 2025-04-01 17:26:12.641862+08:00)
+2025-04-01 17:26:13,289 - INFO - System CPU Usage: 21.1%, Memory Usage: 70.7%
+2025-04-01 17:26:13,305 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:27:12 CST)" executed successfully
+2025-04-01 17:26:13,652 - INFO - System CPU Usage: 21.1%, Memory Usage: 70.7%
+2025-04-01 17:26:13,658 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:27:12 CST)" executed successfully
+2025-04-01 17:27:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:28:12 CST)" (scheduled at 2025-04-01 17:27:12.282655+08:00)
+2025-04-01 17:27:12,647 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:28:12 CST)" (scheduled at 2025-04-01 17:27:12.641862+08:00)
+2025-04-01 17:27:13,294 - INFO - System CPU Usage: 20.3%, Memory Usage: 70.2%
+2025-04-01 17:27:13,299 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:28:12 CST)" executed successfully
+2025-04-01 17:27:13,655 - INFO - System CPU Usage: 20.2%, Memory Usage: 70.1%
+2025-04-01 17:27:13,657 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:28:12 CST)" executed successfully
+2025-04-01 17:28:12,286 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:29:12 CST)" (scheduled at 2025-04-01 17:28:12.282655+08:00)
+2025-04-01 17:28:12,645 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:29:12 CST)" (scheduled at 2025-04-01 17:28:12.641862+08:00)
+2025-04-01 17:28:13,293 - INFO - System CPU Usage: 23.4%, Memory Usage: 70.2%
+2025-04-01 17:28:13,297 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:29:12 CST)" executed successfully
+2025-04-01 17:28:13,646 - INFO - System CPU Usage: 23.4%, Memory Usage: 70.5%
+2025-04-01 17:28:13,655 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:29:12 CST)" executed successfully
+2025-04-01 17:29:12,289 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:30:12 CST)" (scheduled at 2025-04-01 17:29:12.282655+08:00)
+2025-04-01 17:29:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:30:12 CST)" (scheduled at 2025-04-01 17:29:12.641862+08:00)
+2025-04-01 17:29:13,293 - INFO - System CPU Usage: 15.9%, Memory Usage: 65.9%
+2025-04-01 17:29:13,296 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:30:12 CST)" executed successfully
+2025-04-01 17:29:13,652 - INFO - System CPU Usage: 15.4%, Memory Usage: 65.9%
+2025-04-01 17:29:13,658 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:30:12 CST)" executed successfully
+2025-04-01 17:30:12,285 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:31:12 CST)" (scheduled at 2025-04-01 17:30:12.282655+08:00)
+2025-04-01 17:30:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:31:12 CST)" (scheduled at 2025-04-01 17:30:12.641862+08:00)
+2025-04-01 17:30:13,288 - INFO - System CPU Usage: 30.2%, Memory Usage: 68.9%
+2025-04-01 17:30:13,297 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:31:12 CST)" executed successfully
+2025-04-01 17:30:13,649 - INFO - System CPU Usage: 34.0%, Memory Usage: 68.1%
+2025-04-01 17:30:13,651 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:31:12 CST)" executed successfully
+2025-04-01 17:31:12,288 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:32:12 CST)" (scheduled at 2025-04-01 17:31:12.282655+08:00)
+2025-04-01 17:31:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:32:12 CST)" (scheduled at 2025-04-01 17:31:12.641862+08:00)
+2025-04-01 17:31:13,291 - INFO - System CPU Usage: 40.7%, Memory Usage: 69.5%
+2025-04-01 17:31:13,316 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:32:12 CST)" executed successfully
+2025-04-01 17:31:13,651 - INFO - System CPU Usage: 40.9%, Memory Usage: 69.5%
+2025-04-01 17:31:13,652 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:32:12 CST)" executed successfully
+2025-04-01 17:32:12,291 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:33:12 CST)" (scheduled at 2025-04-01 17:32:12.282655+08:00)
+2025-04-01 17:32:12,647 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:33:12 CST)" (scheduled at 2025-04-01 17:32:12.641862+08:00)
+2025-04-01 17:32:13,292 - INFO - System CPU Usage: 24.6%, Memory Usage: 69.5%
+2025-04-01 17:32:13,296 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:33:12 CST)" executed successfully
+2025-04-01 17:32:13,652 - INFO - System CPU Usage: 26.3%, Memory Usage: 69.6%
+2025-04-01 17:32:13,656 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:33:12 CST)" executed successfully
+2025-04-01 17:33:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:34:12 CST)" (scheduled at 2025-04-01 17:33:12.282655+08:00)
+2025-04-01 17:33:12,647 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:34:12 CST)" (scheduled at 2025-04-01 17:33:12.641862+08:00)
+2025-04-01 17:33:13,293 - INFO - System CPU Usage: 32.9%, Memory Usage: 69.3%
+2025-04-01 17:33:13,297 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:34:12 CST)" executed successfully
+2025-04-01 17:33:13,652 - INFO - System CPU Usage: 31.1%, Memory Usage: 69.4%
+2025-04-01 17:33:13,654 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:34:12 CST)" executed successfully
+2025-04-01 17:34:12,285 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:35:12 CST)" (scheduled at 2025-04-01 17:34:12.282655+08:00)
+2025-04-01 17:34:12,645 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:35:12 CST)" (scheduled at 2025-04-01 17:34:12.641862+08:00)
+2025-04-01 17:34:13,289 - INFO - System CPU Usage: 20.9%, Memory Usage: 69.1%
+2025-04-01 17:34:13,292 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:35:12 CST)" executed successfully
+2025-04-01 17:34:13,647 - INFO - System CPU Usage: 28.7%, Memory Usage: 69.2%
+2025-04-01 17:34:13,648 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:35:12 CST)" executed successfully
+2025-04-01 17:35:12,290 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:36:12 CST)" (scheduled at 2025-04-01 17:35:12.282655+08:00)
+2025-04-01 17:35:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:36:12 CST)" (scheduled at 2025-04-01 17:35:12.641862+08:00)
+2025-04-01 17:35:13,297 - INFO - System CPU Usage: 22.9%, Memory Usage: 69.5%
+2025-04-01 17:35:13,302 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:36:12 CST)" executed successfully
+2025-04-01 17:35:13,652 - INFO - System CPU Usage: 22.9%, Memory Usage: 69.5%
+2025-04-01 17:35:13,657 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:36:12 CST)" executed successfully
+2025-04-01 17:36:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:37:12 CST)" (scheduled at 2025-04-01 17:36:12.282655+08:00)
+2025-04-01 17:36:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:37:12 CST)" (scheduled at 2025-04-01 17:36:12.641862+08:00)
+2025-04-01 17:36:13,292 - INFO - System CPU Usage: 35.1%, Memory Usage: 70.9%
+2025-04-01 17:36:13,296 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:37:12 CST)" executed successfully
+2025-04-01 17:36:13,656 - INFO - System CPU Usage: 33.3%, Memory Usage: 70.9%
+2025-04-01 17:36:13,658 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:37:12 CST)" executed successfully
+2025-04-01 17:36:41,913 - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:41] "GET /tasks HTTP/1.1" 200 -
+2025-04-01 17:36:41,937 - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:36:48,483 - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:48] "GET /tasks HTTP/1.1" 200 -
+2025-04-01 17:36:48,511 - INFO - 127.0.0.1 - - [01/Apr/2025 17:36:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:37:12,282 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:38:12 CST)" (scheduled at 2025-04-01 17:37:12.282655+08:00)
+2025-04-01 17:37:12,642 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:38:12 CST)" (scheduled at 2025-04-01 17:37:12.641862+08:00)
+2025-04-01 17:37:13,288 - INFO - System CPU Usage: 15.6%, Memory Usage: 69.2%
+2025-04-01 17:37:13,296 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:38:12 CST)" executed successfully
+2025-04-01 17:37:13,646 - INFO - System CPU Usage: 15.6%, Memory Usage: 69.1%
+2025-04-01 17:37:13,649 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:38:12 CST)" executed successfully
+2025-04-01 17:37:47,140 - INFO - 127.0.0.1 - - [01/Apr/2025 17:37:47] "[31m[1mPOST /tasks HTTP/1.1[0m" 415 -
+2025-04-01 17:37:59,854 - INFO - 127.0.0.1 - - [01/Apr/2025 17:37:59] "[31m[1mPOST /tasks HTTP/1.1[0m" 400 -
+2025-04-01 17:38:12,288 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:39:12 CST)" (scheduled at 2025-04-01 17:38:12.282655+08:00)
+2025-04-01 17:38:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:39:12 CST)" (scheduled at 2025-04-01 17:38:12.641862+08:00)
+2025-04-01 17:38:13,292 - INFO - System CPU Usage: 22.2%, Memory Usage: 71.3%
+2025-04-01 17:38:13,295 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:39:12 CST)" executed successfully
+2025-04-01 17:38:13,651 - INFO - System CPU Usage: 21.4%, Memory Usage: 71.5%
+2025-04-01 17:38:13,668 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:39:12 CST)" executed successfully
+2025-04-01 17:39:12,292 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:40:12 CST)" (scheduled at 2025-04-01 17:39:12.282655+08:00)
+2025-04-01 17:39:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:40:12 CST)" (scheduled at 2025-04-01 17:39:12.641862+08:00)
+2025-04-01 17:39:13,300 - INFO - System CPU Usage: 29.3%, Memory Usage: 71.4%
+2025-04-01 17:39:13,306 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:40:12 CST)" executed successfully
+2025-04-01 17:39:13,652 - INFO - System CPU Usage: 29.3%, Memory Usage: 71.3%
+2025-04-01 17:39:13,657 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:40:12 CST)" executed successfully
+2025-04-01 17:40:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:41:12 CST)" (scheduled at 2025-04-01 17:40:12.282655+08:00)
+2025-04-01 17:40:12,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:41:12 CST)" (scheduled at 2025-04-01 17:40:12.641862+08:00)
+2025-04-01 17:40:13,293 - INFO - System CPU Usage: 22.7%, Memory Usage: 71.4%
+2025-04-01 17:40:13,299 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:41:12 CST)" executed successfully
+2025-04-01 17:40:13,648 - INFO - System CPU Usage: 22.9%, Memory Usage: 70.5%
+2025-04-01 17:40:13,649 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:41:12 CST)" executed successfully
+2025-04-01 17:41:12,287 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:42:12 CST)" (scheduled at 2025-04-01 17:41:12.282655+08:00)
+2025-04-01 17:41:12,644 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:42:12 CST)" (scheduled at 2025-04-01 17:41:12.641862+08:00)
+2025-04-01 17:41:13,293 - INFO - System CPU Usage: 36.2%, Memory Usage: 70.8%
+2025-04-01 17:41:13,296 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:42:12 CST)" executed successfully
+2025-04-01 17:41:13,647 - INFO - System CPU Usage: 37.9%, Memory Usage: 70.9%
+2025-04-01 17:41:13,649 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:42:12 CST)" executed successfully
+2025-04-01 17:42:01,834 - INFO - 127.0.0.1 - - [01/Apr/2025 17:42:01] "[31m[1mPOST /tasks HTTP/1.1[0m" 415 -
+2025-04-01 17:42:12,286 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:43:12 CST)" (scheduled at 2025-04-01 17:42:12.282655+08:00)
+2025-04-01 17:42:12,644 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:43:12 CST)" (scheduled at 2025-04-01 17:42:12.641862+08:00)
+2025-04-01 17:42:13,292 - INFO - System CPU Usage: 23.7%, Memory Usage: 70.4%
+2025-04-01 17:42:13,298 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:43:12 CST)" executed successfully
+2025-04-01 17:42:13,648 - INFO - System CPU Usage: 19.4%, Memory Usage: 70.4%
+2025-04-01 17:42:13,652 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:43:12 CST)" executed successfully
+2025-04-01 17:42:18,945 - INFO - 127.0.0.1 - - [01/Apr/2025 17:42:18] "[31m[1mPOST /tasks HTTP/1.1[0m" 415 -
+2025-04-01 17:42:43,235 - INFO - 127.0.0.1 - - [01/Apr/2025 17:42:43] "[31m[1mPOST /tasks HTTP/1.1[0m" 415 -
+2025-04-01 17:43:21,975 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:43:21,976 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:43:21,976 - INFO - Scheduler started
+2025-04-01 17:43:22,002 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 17:43:22,002 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-01 17:43:22,003 - INFO -  * Restarting with stat
+2025-04-01 17:43:22,277 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:43:22,277 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:43:22,277 - INFO - Scheduler started
+2025-04-01 17:43:22,294 - WARNING -  * Debugger is active!
+2025-04-01 17:43:22,302 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 17:43:26,952 - INFO - 127.0.0.1 - - [01/Apr/2025 17:43:26] "[31m[1mPOST /tasks HTTP/1.1[0m" 415 -
+2025-04-01 17:43:27,762 - INFO - 127.0.0.1 - - [01/Apr/2025 17:43:27] "[31m[1mPOST /tasks HTTP/1.1[0m" 415 -
+2025-04-01 17:43:47,190 - INFO - 127.0.0.1 - - [01/Apr/2025 17:43:47] "GET /tasks HTTP/1.1" 200 -
+2025-04-01 17:43:47,215 - INFO - 127.0.0.1 - - [01/Apr/2025 17:43:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-01 17:44:21,977 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:44:21 CST)" (scheduled at 2025-04-01 17:44:21.975248+08:00)
+2025-04-01 17:44:22,282 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:44:22 CST)" (scheduled at 2025-04-01 17:44:22.277106+08:00)
+2025-04-01 17:44:22,978 - INFO - System CPU Usage: 15.7%, Memory Usage: 69.1%
+2025-04-01 17:44:22,985 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:45:21 CST)" executed successfully
+2025-04-01 17:44:23,283 - INFO - System CPU Usage: 17.4%, Memory Usage: 69.1%
+2025-04-01 17:44:23,284 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:45:22 CST)" executed successfully
+2025-04-01 17:45:21,976 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:46:21 CST)" (scheduled at 2025-04-01 17:45:21.975248+08:00)
+2025-04-01 17:45:22,281 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:46:22 CST)" (scheduled at 2025-04-01 17:45:22.277106+08:00)
+2025-04-01 17:45:22,981 - INFO - System CPU Usage: 25.2%, Memory Usage: 69.7%
+2025-04-01 17:45:22,986 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:46:21 CST)" executed successfully
+2025-04-01 17:45:23,298 - INFO - System CPU Usage: 16.1%, Memory Usage: 69.8%
+2025-04-01 17:45:23,302 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:46:22 CST)" executed successfully
+2025-04-01 17:46:21,979 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:47:21 CST)" (scheduled at 2025-04-01 17:46:21.975248+08:00)
+2025-04-01 17:46:22,280 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:47:22 CST)" (scheduled at 2025-04-01 17:46:22.277106+08:00)
+2025-04-01 17:46:22,984 - INFO - System CPU Usage: 27.9%, Memory Usage: 69.7%
+2025-04-01 17:46:22,988 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:47:21 CST)" executed successfully
+2025-04-01 17:46:23,282 - INFO - System CPU Usage: 27.7%, Memory Usage: 69.7%
+2025-04-01 17:46:23,284 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:47:22 CST)" executed successfully
+2025-04-01 17:47:21,976 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:48:21 CST)" (scheduled at 2025-04-01 17:47:21.975248+08:00)
+2025-04-01 17:47:22,280 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:48:22 CST)" (scheduled at 2025-04-01 17:47:22.277106+08:00)
+2025-04-01 17:47:22,981 - INFO - System CPU Usage: 19.6%, Memory Usage: 69.5%
+2025-04-01 17:47:22,987 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:48:21 CST)" executed successfully
+2025-04-01 17:47:23,284 - INFO - System CPU Usage: 19.5%, Memory Usage: 69.5%
+2025-04-01 17:47:23,286 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:48:22 CST)" executed successfully
+2025-04-01 17:47:57,066 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/test/test_task.py', reloading
+2025-04-01 17:47:57,116 - INFO -  * Restarting with stat
+2025-04-01 17:47:57,574 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:47:57,575 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:47:57,575 - INFO - Scheduler started
+2025-04-01 17:47:57,595 - WARNING -  * Debugger is active!
+2025-04-01 17:47:57,624 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 17:48:21,978 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:49:21 CST)" (scheduled at 2025-04-01 17:48:21.975248+08:00)
+2025-04-01 17:48:22,984 - INFO - System CPU Usage: 12.7%, Memory Usage: 69.2%
+2025-04-01 17:48:22,992 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:49:21 CST)" executed successfully
+2025-04-01 17:48:57,575 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:48:57 CST)" (scheduled at 2025-04-01 17:48:57.574527+08:00)
+2025-04-01 17:48:58,580 - INFO - System CPU Usage: 23.9%, Memory Usage: 70.0%
+2025-04-01 17:48:58,583 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:49:57 CST)" executed successfully
+2025-04-01 17:49:01,537 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/test/test_task.py', reloading
+2025-04-01 17:49:01,576 - INFO -  * Restarting with stat
+2025-04-01 17:49:01,940 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:49:01,941 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:49:01,941 - INFO - Scheduler started
+2025-04-01 17:49:01,970 - WARNING -  * Debugger is active!
+2025-04-01 17:49:01,978 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 17:49:21,978 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:50:21 CST)" (scheduled at 2025-04-01 17:49:21.975248+08:00)
+2025-04-01 17:49:22,981 - INFO - System CPU Usage: 15.0%, Memory Usage: 69.2%
+2025-04-01 17:49:22,983 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:50:21 CST)" executed successfully
+2025-04-01 17:49:42,472 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/test/test_task.py', reloading
+2025-04-01 17:49:42,510 - INFO -  * Restarting with stat
+2025-04-01 17:49:42,840 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:49:42,840 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:49:42,840 - INFO - Scheduler started
+2025-04-01 17:49:42,863 - WARNING -  * Debugger is active!
+2025-04-01 17:49:42,872 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 17:50:21,979 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:51:21 CST)" (scheduled at 2025-04-01 17:50:21.975248+08:00)
+2025-04-01 17:50:22,982 - INFO - System CPU Usage: 25.8%, Memory Usage: 68.9%
+2025-04-01 17:50:22,984 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:51:21 CST)" executed successfully
+2025-04-01 17:50:42,845 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:50:42 CST)" (scheduled at 2025-04-01 17:50:42.840076+08:00)
+2025-04-01 17:50:43,847 - INFO - System CPU Usage: 26.8%, Memory Usage: 69.2%
+2025-04-01 17:50:43,850 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:51:42 CST)" executed successfully
+2025-04-01 17:51:04,450 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/test/test_task.py', reloading
+2025-04-01 17:51:04,502 - INFO -  * Restarting with stat
+2025-04-01 17:51:04,904 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-01 17:51:04,904 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-01 17:51:04,904 - INFO - Scheduler started
+2025-04-01 17:51:04,923 - WARNING -  * Debugger is active!
+2025-04-01 17:51:04,933 - INFO -  * Debugger PIN: 689-429-199
+2025-04-01 17:51:21,976 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:52:21 CST)" (scheduled at 2025-04-01 17:51:21.975248+08:00)
+2025-04-01 17:51:22,978 - INFO - System CPU Usage: 27.7%, Memory Usage: 70.0%
+2025-04-01 17:51:22,990 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:52:21 CST)" executed successfully
+2025-04-01 17:52:04,910 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:52:04 CST)" (scheduled at 2025-04-01 17:52:04.904036+08:00)
+2025-04-01 17:52:05,915 - INFO - System CPU Usage: 18.8%, Memory Usage: 69.1%
+2025-04-01 17:52:05,930 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:53:04 CST)" executed successfully
+2025-04-01 17:52:21,979 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:53:21 CST)" (scheduled at 2025-04-01 17:52:21.975248+08:00)
+2025-04-01 17:52:22,984 - INFO - System CPU Usage: 23.7%, Memory Usage: 69.9%
+2025-04-01 17:52:22,985 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:53:21 CST)" executed successfully
+2025-04-01 17:53:04,905 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:54:04 CST)" (scheduled at 2025-04-01 17:53:04.904036+08:00)
+2025-04-01 17:53:05,907 - INFO - System CPU Usage: 23.8%, Memory Usage: 69.8%
+2025-04-01 17:53:05,911 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:54:04 CST)" executed successfully
+2025-04-01 17:53:21,980 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:54:21 CST)" (scheduled at 2025-04-01 17:53:21.975248+08:00)
+2025-04-01 17:53:22,985 - INFO - System CPU Usage: 22.7%, Memory Usage: 69.3%
+2025-04-01 17:53:22,988 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:54:21 CST)" executed successfully
+2025-04-01 17:54:04,909 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:55:04 CST)" (scheduled at 2025-04-01 17:54:04.904036+08:00)
+2025-04-01 17:54:05,917 - INFO - System CPU Usage: 13.6%, Memory Usage: 69.2%
+2025-04-01 17:54:05,919 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:55:04 CST)" executed successfully
+2025-04-01 17:54:21,975 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:55:21 CST)" (scheduled at 2025-04-01 17:54:21.975248+08:00)
+2025-04-01 17:54:22,981 - INFO - System CPU Usage: 11.2%, Memory Usage: 69.0%
+2025-04-01 17:54:22,985 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:55:21 CST)" executed successfully
+2025-04-01 17:55:04,909 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:56:04 CST)" (scheduled at 2025-04-01 17:55:04.904036+08:00)
+2025-04-01 17:55:05,914 - INFO - System CPU Usage: 12.8%, Memory Usage: 69.3%
+2025-04-01 17:55:05,926 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:56:04 CST)" executed successfully
+2025-04-01 17:55:21,981 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:56:21 CST)" (scheduled at 2025-04-01 17:55:21.975248+08:00)
+2025-04-01 17:55:22,988 - INFO - System CPU Usage: 14.9%, Memory Usage: 69.1%
+2025-04-01 17:55:22,993 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 17:56:21 CST)" executed successfully

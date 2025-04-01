@@ -1,0 +1,5 @@
+Flask
+redis
+mysql-connector-python
+apscheduler
+psutil

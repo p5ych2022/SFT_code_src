@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tasks</title>
+</head>
+<body>
+    <h1>All Tasks</h1>
+    <table border="1">
+        <tr>
+            <th>Task ID</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Details</th>
+        </tr>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.task_id }}</td>
+            <td>{{ task.task_name }}</td>
+            <td>{{ task.status }}</td>
+            <td>
+                <strong>Type:</strong> {{ task.task_type }}<br/>
+                <strong>Description:</strong> {{ task.description }}<br/>
+                <strong>Scheduling Rule:</strong> {{ task.scheduling_rule }}<br/>
+                <strong>Dependencies:</strong> {{ task.dependencies }}<br/>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br/>
+    <a href="/ui">Return to Overview</a>
+</body>
+</html>
