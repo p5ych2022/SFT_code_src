@@ -12,4 +12,13 @@
   - 使用 MySQL 存储任务信息
   - 为用户提供一个简单直观的 Web 界面来管理任务
   - 支持异步的任务执行，避免阻塞主线
->>>>>>> origin/master
+- 04-py-education_platform
+  - 使用 Django 作为后端框架
+  - MySQL 作为数据库
+  - 使用 Redis 缓存用户信息和课程信息
+  - 主要功能包括用户管理、课程管理等。
+- 05-py-DHCP_server
+  - IP 地址分配和管理
+  - 租赁管理
+  - DHCP 选项配置
+  - 数据包处理

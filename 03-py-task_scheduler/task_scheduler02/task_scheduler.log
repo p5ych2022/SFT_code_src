@@ -674,3 +674,276 @@
 2025-04-01 18:48:22,984 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-01 18:49:21 CST)" executed successfully
 2025-04-01 18:48:59,919 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/app.py', reloading
 2025-04-01 18:48:59,961 - INFO -  * Restarting with stat
+2025-04-03 23:14:29,355 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 23:14:29,356 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-03 23:14:29,356 - INFO - Scheduler started
+2025-04-03 23:14:29,399 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 23:14:29,399 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 23:14:29,400 - INFO -  * Restarting with stat
+2025-04-03 23:14:29,857 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 23:14:29,857 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-03 23:14:29,857 - INFO - Scheduler started
+2025-04-03 23:14:29,879 - WARNING -  * Debugger is active!
+2025-04-03 23:14:29,891 - INFO -  * Debugger PIN: 689-429-199
+2025-04-03 23:15:05,225 - INFO - 127.0.0.1 - - [03/Apr/2025 23:15:05] "GET /ui HTTP/1.1" 200 -
+2025-04-03 23:15:08,947 - INFO - BEGIN (implicit)
+2025-04-03 23:15:08,956 - INFO - SELECT tasks.id AS tasks_id, tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.task_type AS tasks_task_type, tasks.execution_params AS tasks_execution_params, tasks.scheduling_rule AS tasks_scheduling_rule, tasks.priority AS tasks_priority, tasks.dependencies AS tasks_dependencies 
+FROM tasks
+2025-04-03 23:15:08,957 - INFO - [generated in 0.00206s] {}
+2025-04-03 23:15:08,959 - INFO - ROLLBACK
+2025-04-03 23:15:08,993 - INFO - 127.0.0.1 - - [03/Apr/2025 23:15:08] "[35m[1mGET /ui/tasks HTTP/1.1[0m" 500 -
+2025-04-03 23:15:09,018 - INFO - 127.0.0.1 - - [03/Apr/2025 23:15:09] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-03 23:15:09,018 - INFO - 127.0.0.1 - - [03/Apr/2025 23:15:09] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-03 23:15:09,043 - INFO - 127.0.0.1 - - [03/Apr/2025 23:15:09] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-03 23:15:09,071 - INFO - 127.0.0.1 - - [03/Apr/2025 23:15:09] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=console.png&s=wzgy1knXV2MtKxaQdydJ HTTP/1.1" 200 -
+2025-04-03 23:15:29,190 - INFO - 127.0.0.1 - - [03/Apr/2025 23:15:29] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-04-03 23:15:29,357 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:15:29 CST)" (scheduled at 2025-04-03 23:15:29.355379+08:00)
+2025-04-03 23:15:29,863 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:15:29 CST)" (scheduled at 2025-04-03 23:15:29.857182+08:00)
+2025-04-03 23:15:30,363 - INFO - System CPU Usage: 24.7%, Memory Usage: 65.7%
+2025-04-03 23:15:30,372 - INFO - BEGIN (implicit)
+2025-04-03 23:15:30,379 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:15:30,380 - INFO - [generated in 0.00164s] {'created_at': datetime.datetime(2025, 4, 3, 23, 15, 30, 364223), 'cpu_usage': 24.7, 'memory_usage': 65.7}
+2025-04-03 23:15:30,408 - INFO - COMMIT
+2025-04-03 23:15:30,415 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:16:29 CST)" executed successfully
+2025-04-03 23:15:30,866 - INFO - System CPU Usage: 24.1%, Memory Usage: 66.4%
+2025-04-03 23:15:30,867 - INFO - BEGIN (implicit)
+2025-04-03 23:15:30,872 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:15:30,872 - INFO - [generated in 0.00065s] {'created_at': datetime.datetime(2025, 4, 3, 23, 15, 30, 866392), 'cpu_usage': 24.1, 'memory_usage': 66.4}
+2025-04-03 23:15:30,875 - INFO - COMMIT
+2025-04-03 23:15:30,876 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:16:29 CST)" executed successfully
+2025-04-03 23:16:06,889 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/app.py', reloading
+2025-04-03 23:16:06,980 - INFO -  * Restarting with stat
+2025-04-03 23:16:07,392 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 23:16:07,393 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-03 23:16:07,393 - INFO - Scheduler started
+2025-04-03 23:16:07,418 - WARNING -  * Debugger is active!
+2025-04-03 23:16:07,430 - INFO -  * Debugger PIN: 689-429-199
+2025-04-03 23:16:29,360 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:17:29 CST)" (scheduled at 2025-04-03 23:16:29.355379+08:00)
+2025-04-03 23:16:30,363 - INFO - System CPU Usage: 21.9%, Memory Usage: 65.9%
+2025-04-03 23:16:30,363 - INFO - BEGIN (implicit)
+2025-04-03 23:16:30,364 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:16:30,364 - INFO - [cached since 59.99s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 16, 30, 363499), 'cpu_usage': 21.9, 'memory_usage': 65.9}
+2025-04-03 23:16:30,365 - INFO - COMMIT
+2025-04-03 23:16:30,367 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:17:29 CST)" executed successfully
+2025-04-03 23:17:07,399 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:17:07 CST)" (scheduled at 2025-04-03 23:17:07.392861+08:00)
+2025-04-03 23:17:07,928 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/app.py', reloading
+2025-04-03 23:17:08,404 - INFO - System CPU Usage: 26.8%, Memory Usage: 66.6%
+2025-04-03 23:17:08,406 - INFO - BEGIN (implicit)
+2025-04-03 23:17:08,408 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:17:08,408 - INFO - [generated in 0.00079s] {'created_at': datetime.datetime(2025, 4, 3, 23, 17, 8, 404791), 'cpu_usage': 26.8, 'memory_usage': 66.6}
+2025-04-03 23:17:08,409 - INFO - COMMIT
+2025-04-03 23:17:08,410 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:18:07 CST)" executed successfully
+2025-04-03 23:17:08,481 - INFO -  * Restarting with stat
+2025-04-03 23:17:09,058 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 23:17:09,059 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-03 23:17:09,059 - INFO - Scheduler started
+2025-04-03 23:17:09,088 - WARNING -  * Debugger is active!
+2025-04-03 23:17:09,133 - INFO -  * Debugger PIN: 689-429-199
+2025-04-03 23:17:29,360 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:18:29 CST)" (scheduled at 2025-04-03 23:17:29.355379+08:00)
+2025-04-03 23:17:30,362 - INFO - System CPU Usage: 16.2%, Memory Usage: 65.9%
+2025-04-03 23:17:30,364 - INFO - BEGIN (implicit)
+2025-04-03 23:17:30,366 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:17:30,366 - INFO - [cached since 120s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 17, 30, 363754), 'cpu_usage': 16.2, 'memory_usage': 65.9}
+2025-04-03 23:17:30,368 - INFO - COMMIT
+2025-04-03 23:17:30,374 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:18:29 CST)" executed successfully
+2025-04-03 23:17:49,060 - INFO - BEGIN (implicit)
+2025-04-03 23:17:49,063 - INFO - SELECT tasks.id AS tasks_id, tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.task_type AS tasks_task_type, tasks.execution_params AS tasks_execution_params, tasks.scheduling_rule AS tasks_scheduling_rule, tasks.priority AS tasks_priority, tasks.dependencies AS tasks_dependencies 
+FROM tasks
+2025-04-03 23:17:49,063 - INFO - [generated in 0.00099s] {}
+2025-04-03 23:17:49,064 - INFO - ROLLBACK
+2025-04-03 23:17:49,104 - INFO - 127.0.0.1 - - [03/Apr/2025 23:17:49] "[35m[1mGET /tasks HTTP/1.1[0m" 500 -
+2025-04-03 23:17:49,145 - INFO - 127.0.0.1 - - [03/Apr/2025 23:17:49] "GET /tasks?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-03 23:17:49,145 - INFO - 127.0.0.1 - - [03/Apr/2025 23:17:49] "GET /tasks?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-03 23:17:49,155 - INFO - 127.0.0.1 - - [03/Apr/2025 23:17:49] "GET /tasks?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-03 23:17:49,178 - INFO - 127.0.0.1 - - [03/Apr/2025 23:17:49] "GET /tasks?__debugger__=yes&cmd=resource&f=console.png&s=YjCvmBSRnLRkMn5DEY3z HTTP/1.1" 200 -
+2025-04-03 23:18:09,065 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:18:09 CST)" (scheduled at 2025-04-03 23:18:09.058924+08:00)
+2025-04-03 23:18:10,072 - INFO - System CPU Usage: 28.3%, Memory Usage: 66.7%
+2025-04-03 23:18:10,073 - INFO - BEGIN (implicit)
+2025-04-03 23:18:10,076 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:18:10,076 - INFO - [generated in 0.00072s] {'created_at': datetime.datetime(2025, 4, 3, 23, 18, 10, 72835), 'cpu_usage': 28.3, 'memory_usage': 66.7}
+2025-04-03 23:18:10,077 - INFO - COMMIT
+2025-04-03 23:18:10,079 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:19:09 CST)" executed successfully
+2025-04-03 23:18:29,357 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:19:29 CST)" (scheduled at 2025-04-03 23:18:29.355379+08:00)
+2025-04-03 23:18:30,358 - INFO - System CPU Usage: 17.8%, Memory Usage: 66.7%
+2025-04-03 23:18:30,359 - INFO - BEGIN (implicit)
+2025-04-03 23:18:30,360 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:18:30,360 - INFO - [cached since 180s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 18, 30, 358696), 'cpu_usage': 17.8, 'memory_usage': 66.7}
+2025-04-03 23:18:30,361 - INFO - COMMIT
+2025-04-03 23:18:30,363 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:19:29 CST)" executed successfully
+2025-04-03 23:18:51,341 - INFO - BEGIN (implicit)
+2025-04-03 23:18:51,343 - INFO - SELECT tasks.id AS tasks_id, tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.task_type AS tasks_task_type, tasks.execution_params AS tasks_execution_params, tasks.scheduling_rule AS tasks_scheduling_rule, tasks.priority AS tasks_priority, tasks.dependencies AS tasks_dependencies 
+FROM tasks
+2025-04-03 23:18:51,344 - INFO - [cached since 62.28s ago] {}
+2025-04-03 23:18:51,345 - INFO - ROLLBACK
+2025-04-03 23:18:51,368 - INFO - 127.0.0.1 - - [03/Apr/2025 23:18:51] "[35m[1mGET /ui/tasks HTTP/1.1[0m" 500 -
+2025-04-03 23:18:51,393 - INFO - 127.0.0.1 - - [03/Apr/2025 23:18:51] "[36mGET /ui/tasks?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-03 23:18:51,393 - INFO - 127.0.0.1 - - [03/Apr/2025 23:18:51] "[36mGET /ui/tasks?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-03 23:18:51,440 - INFO - 127.0.0.1 - - [03/Apr/2025 23:18:51] "GET /ui/tasks?__debugger__=yes&cmd=resource&f=console.png&s=YjCvmBSRnLRkMn5DEY3z HTTP/1.1" 200 -
+2025-04-03 23:19:09,064 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:20:09 CST)" (scheduled at 2025-04-03 23:19:09.058924+08:00)
+2025-04-03 23:19:10,070 - INFO - System CPU Usage: 22.5%, Memory Usage: 66.7%
+2025-04-03 23:19:10,071 - INFO - BEGIN (implicit)
+2025-04-03 23:19:10,072 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:19:10,072 - INFO - [cached since 60s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 19, 10, 71136), 'cpu_usage': 22.5, 'memory_usage': 66.7}
+2025-04-03 23:19:10,073 - INFO - COMMIT
+2025-04-03 23:19:10,075 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:20:09 CST)" executed successfully
+2025-04-03 23:19:29,361 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:20:29 CST)" (scheduled at 2025-04-03 23:19:29.355379+08:00)
+2025-04-03 23:19:30,366 - INFO - System CPU Usage: 21.2%, Memory Usage: 66.2%
+2025-04-03 23:19:30,367 - INFO - BEGIN (implicit)
+2025-04-03 23:19:30,368 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:19:30,368 - INFO - [cached since 240s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 19, 30, 367044), 'cpu_usage': 21.2, 'memory_usage': 66.2}
+2025-04-03 23:19:30,369 - INFO - COMMIT
+2025-04-03 23:19:30,371 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:20:29 CST)" executed successfully
+2025-04-03 23:20:09,063 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:21:09 CST)" (scheduled at 2025-04-03 23:20:09.058924+08:00)
+2025-04-03 23:20:10,066 - INFO - System CPU Usage: 22.2%, Memory Usage: 66.4%
+2025-04-03 23:20:10,067 - INFO - BEGIN (implicit)
+2025-04-03 23:20:10,067 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:20:10,067 - INFO - [cached since 120s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 20, 10, 66837), 'cpu_usage': 22.2, 'memory_usage': 66.4}
+2025-04-03 23:20:10,068 - INFO - COMMIT
+2025-04-03 23:20:10,069 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:21:09 CST)" executed successfully
+2025-04-03 23:20:29,357 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:21:29 CST)" (scheduled at 2025-04-03 23:20:29.355379+08:00)
+2025-04-03 23:20:30,363 - INFO - System CPU Usage: 43.7%, Memory Usage: 65.9%
+2025-04-03 23:20:30,363 - INFO - BEGIN (implicit)
+2025-04-03 23:20:30,364 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:20:30,364 - INFO - [cached since 300s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 20, 30, 363569), 'cpu_usage': 43.7, 'memory_usage': 65.9}
+2025-04-03 23:20:30,365 - INFO - COMMIT
+2025-04-03 23:20:30,368 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:21:29 CST)" executed successfully
+2025-04-03 23:21:09,065 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:22:09 CST)" (scheduled at 2025-04-03 23:21:09.058924+08:00)
+2025-04-03 23:21:10,072 - INFO - System CPU Usage: 20.8%, Memory Usage: 66.2%
+2025-04-03 23:21:10,072 - INFO - BEGIN (implicit)
+2025-04-03 23:21:10,073 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:21:10,073 - INFO - [cached since 180s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 21, 10, 72450), 'cpu_usage': 20.8, 'memory_usage': 66.2}
+2025-04-03 23:21:10,074 - INFO - COMMIT
+2025-04-03 23:21:10,077 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:22:09 CST)" executed successfully
+2025-04-03 23:21:29,358 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:22:29 CST)" (scheduled at 2025-04-03 23:21:29.355379+08:00)
+2025-04-03 23:21:30,359 - INFO - System CPU Usage: 12.9%, Memory Usage: 66.0%
+2025-04-03 23:21:30,360 - INFO - BEGIN (implicit)
+2025-04-03 23:21:30,362 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:21:30,362 - INFO - [cached since 360s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 21, 30, 360279), 'cpu_usage': 12.9, 'memory_usage': 66.0}
+2025-04-03 23:21:30,363 - INFO - COMMIT
+2025-04-03 23:21:30,366 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:22:29 CST)" executed successfully
+2025-04-03 23:22:09,065 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:23:09 CST)" (scheduled at 2025-04-03 23:22:09.058924+08:00)
+2025-04-03 23:22:10,071 - INFO - System CPU Usage: 22.8%, Memory Usage: 66.9%
+2025-04-03 23:22:10,072 - INFO - BEGIN (implicit)
+2025-04-03 23:22:10,074 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:22:10,074 - INFO - [cached since 240s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 22, 10, 71845), 'cpu_usage': 22.8, 'memory_usage': 66.9}
+2025-04-03 23:22:10,076 - INFO - COMMIT
+2025-04-03 23:22:10,080 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:23:09 CST)" executed successfully
+2025-04-03 23:22:29,361 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:23:29 CST)" (scheduled at 2025-04-03 23:22:29.355379+08:00)
+2025-04-03 23:22:30,369 - INFO - System CPU Usage: 37.8%, Memory Usage: 67.1%
+2025-04-03 23:22:30,369 - INFO - BEGIN (implicit)
+2025-04-03 23:22:30,371 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:22:30,371 - INFO - [cached since 420s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 22, 30, 369385), 'cpu_usage': 37.8, 'memory_usage': 67.1}
+2025-04-03 23:22:30,373 - INFO - COMMIT
+2025-04-03 23:22:30,374 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:23:29 CST)" executed successfully
+2025-04-03 23:23:09,063 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:24:09 CST)" (scheduled at 2025-04-03 23:23:09.058924+08:00)
+2025-04-03 23:23:10,066 - INFO - System CPU Usage: 42.7%, Memory Usage: 66.3%
+2025-04-03 23:23:10,068 - INFO - BEGIN (implicit)
+2025-04-03 23:23:10,070 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:23:10,071 - INFO - [cached since 300s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 23, 10, 67179), 'cpu_usage': 42.7, 'memory_usage': 66.3}
+2025-04-03 23:23:10,073 - INFO - COMMIT
+2025-04-03 23:23:10,083 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:24:09 CST)" executed successfully
+2025-04-03 23:23:29,357 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:24:29 CST)" (scheduled at 2025-04-03 23:23:29.355379+08:00)
+2025-04-03 23:23:30,361 - INFO - System CPU Usage: 22.1%, Memory Usage: 66.5%
+2025-04-03 23:23:30,362 - INFO - BEGIN (implicit)
+2025-04-03 23:23:30,362 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:23:30,362 - INFO - [cached since 480s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 23, 30, 361820), 'cpu_usage': 22.1, 'memory_usage': 66.5}
+2025-04-03 23:23:30,363 - INFO - COMMIT
+2025-04-03 23:23:30,364 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:24:29 CST)" executed successfully
+2025-04-03 23:23:40,144 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/models.py', reloading
+2025-04-03 23:23:40,223 - INFO -  * Restarting with stat
+2025-04-03 23:24:09,225 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 23:24:09,225 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-03 23:24:09,225 - INFO - Scheduler started
+2025-04-03 23:24:09,256 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 23:24:09,256 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-03 23:24:09,257 - INFO -  * Restarting with stat
+2025-04-03 23:24:09,681 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 23:24:09,681 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-03 23:24:09,681 - INFO - Scheduler started
+2025-04-03 23:24:09,695 - WARNING -  * Debugger is active!
+2025-04-03 23:24:09,738 - INFO -  * Debugger PIN: 689-429-199
+2025-04-03 23:24:14,177 - INFO - BEGIN (implicit)
+2025-04-03 23:24:14,179 - INFO - SELECT tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.task_type AS tasks_task_type, tasks.execution_params AS tasks_execution_params, tasks.scheduling_rule AS tasks_scheduling_rule, tasks.priority AS tasks_priority, tasks.dependencies AS tasks_dependencies 
+FROM tasks
+2025-04-03 23:24:14,179 - INFO - [generated in 0.00051s] {}
+2025-04-03 23:24:14,180 - INFO - ROLLBACK
+2025-04-03 23:24:14,183 - INFO - 127.0.0.1 - - [03/Apr/2025 23:24:14] "GET /ui/tasks HTTP/1.1" 200 -
+2025-04-03 23:24:17,626 - INFO - 127.0.0.1 - - [03/Apr/2025 23:24:17] "GET /ui HTTP/1.1" 200 -
+2025-04-03 23:24:18,922 - INFO - BEGIN (implicit)
+2025-04-03 23:24:18,924 - INFO - SELECT tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.task_type AS tasks_task_type, tasks.execution_params AS tasks_execution_params, tasks.scheduling_rule AS tasks_scheduling_rule, tasks.priority AS tasks_priority, tasks.dependencies AS tasks_dependencies 
+FROM tasks
+2025-04-03 23:24:18,924 - INFO - [cached since 4.745s ago] {}
+2025-04-03 23:24:18,925 - INFO - ROLLBACK
+2025-04-03 23:24:18,928 - INFO - BEGIN (implicit)
+2025-04-03 23:24:18,931 - INFO - SELECT system_metrics.id AS system_metrics_id, system_metrics.created_at AS system_metrics_created_at, system_metrics.cpu_usage AS system_metrics_cpu_usage, system_metrics.memory_usage AS system_metrics_memory_usage 
+FROM system_metrics ORDER BY system_metrics.id DESC 
+ LIMIT %(param_1)s
+2025-04-03 23:24:18,932 - INFO - [generated in 0.00079s] {'param_1': 10}
+2025-04-03 23:24:18,934 - INFO - ROLLBACK
+2025-04-03 23:24:18,939 - INFO - 127.0.0.1 - - [03/Apr/2025 23:24:18] "GET /ui/metrics HTTP/1.1" 200 -
+2025-04-03 23:24:23,099 - INFO - 127.0.0.1 - - [03/Apr/2025 23:24:23] "GET /ui HTTP/1.1" 200 -
+2025-04-03 23:24:24,106 - INFO - BEGIN (implicit)
+2025-04-03 23:24:24,107 - INFO - SELECT tasks.task_id AS tasks_task_id, tasks.task_name AS tasks_task_name, tasks.description AS tasks_description, tasks.task_type AS tasks_task_type, tasks.execution_params AS tasks_execution_params, tasks.scheduling_rule AS tasks_scheduling_rule, tasks.priority AS tasks_priority, tasks.dependencies AS tasks_dependencies 
+FROM tasks
+2025-04-03 23:24:24,107 - INFO - [cached since 9.928s ago] {}
+2025-04-03 23:24:24,108 - INFO - ROLLBACK
+2025-04-03 23:24:24,108 - INFO - 127.0.0.1 - - [03/Apr/2025 23:24:24] "GET /ui/tasks HTTP/1.1" 200 -
+2025-04-03 23:24:25,272 - INFO - 127.0.0.1 - - [03/Apr/2025 23:24:25] "GET /ui HTTP/1.1" 200 -
+2025-04-03 23:24:46,141 - INFO -  * Detected change in '/Users/bytedance/Code/SFT_code_src/03-py-task_scheduler/task_scheduler02/app.py', reloading
+2025-04-03 23:24:46,229 - INFO -  * Restarting with stat
+2025-04-03 23:24:46,641 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-03 23:24:46,641 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-03 23:24:46,641 - INFO - Scheduler started
+2025-04-03 23:24:46,665 - WARNING -  * Debugger is active!
+2025-04-03 23:24:46,673 - INFO -  * Debugger PIN: 689-429-199
+2025-04-03 23:25:09,227 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:25:09 CST)" (scheduled at 2025-04-03 23:25:09.225049+08:00)
+2025-04-03 23:25:10,233 - INFO - System CPU Usage: 22.3%, Memory Usage: 66.1%
+2025-04-03 23:25:10,240 - INFO - BEGIN (implicit)
+2025-04-03 23:25:10,247 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:25:10,247 - INFO - [generated in 0.00157s] {'created_at': datetime.datetime(2025, 4, 3, 23, 25, 10, 234098), 'cpu_usage': 22.3, 'memory_usage': 66.1}
+2025-04-03 23:25:10,250 - INFO - COMMIT
+2025-04-03 23:25:10,254 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:26:09 CST)" executed successfully
+2025-04-03 23:25:46,648 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:25:46 CST)" (scheduled at 2025-04-03 23:25:46.641128+08:00)
+2025-04-03 23:25:47,654 - INFO - System CPU Usage: 38.2%, Memory Usage: 66.8%
+2025-04-03 23:25:47,655 - INFO - BEGIN (implicit)
+2025-04-03 23:25:47,657 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:25:47,657 - INFO - [generated in 0.00053s] {'created_at': datetime.datetime(2025, 4, 3, 23, 25, 47, 654511), 'cpu_usage': 38.2, 'memory_usage': 66.8}
+2025-04-03 23:25:47,658 - INFO - COMMIT
+2025-04-03 23:25:47,659 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:26:46 CST)" executed successfully
+2025-04-03 23:26:09,231 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:27:09 CST)" (scheduled at 2025-04-03 23:26:09.225049+08:00)
+2025-04-03 23:26:10,235 - INFO - System CPU Usage: 18.9%, Memory Usage: 66.8%
+2025-04-03 23:26:10,236 - INFO - BEGIN (implicit)
+2025-04-03 23:26:10,237 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:26:10,237 - INFO - [cached since 59.99s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 26, 10, 235758), 'cpu_usage': 18.9, 'memory_usage': 66.8}
+2025-04-03 23:26:10,238 - INFO - COMMIT
+2025-04-03 23:26:10,240 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:27:09 CST)" executed successfully
+2025-04-03 23:26:46,647 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:27:46 CST)" (scheduled at 2025-04-03 23:26:46.641128+08:00)
+2025-04-03 23:26:47,649 - INFO - System CPU Usage: 15.3%, Memory Usage: 65.9%
+2025-04-03 23:26:47,651 - INFO - BEGIN (implicit)
+2025-04-03 23:26:47,652 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:26:47,652 - INFO - [cached since 60s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 26, 47, 650454), 'cpu_usage': 15.3, 'memory_usage': 65.9}
+2025-04-03 23:26:47,654 - INFO - COMMIT
+2025-04-03 23:26:47,657 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:27:46 CST)" executed successfully
+2025-04-03 23:27:09,229 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:28:09 CST)" (scheduled at 2025-04-03 23:27:09.225049+08:00)
+2025-04-03 23:27:10,233 - INFO - System CPU Usage: 17.1%, Memory Usage: 66.1%
+2025-04-03 23:27:10,234 - INFO - BEGIN (implicit)
+2025-04-03 23:27:10,235 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:27:10,235 - INFO - [cached since 120s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 27, 10, 234024), 'cpu_usage': 17.1, 'memory_usage': 66.1}
+2025-04-03 23:27:10,236 - INFO - COMMIT
+2025-04-03 23:27:10,238 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:28:09 CST)" executed successfully
+2025-04-03 23:27:46,646 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:28:46 CST)" (scheduled at 2025-04-03 23:27:46.641128+08:00)
+2025-04-03 23:27:47,652 - INFO - System CPU Usage: 22.9%, Memory Usage: 66.4%
+2025-04-03 23:27:47,654 - INFO - BEGIN (implicit)
+2025-04-03 23:27:47,660 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:27:47,661 - INFO - [cached since 120s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 27, 47, 652776), 'cpu_usage': 22.9, 'memory_usage': 66.4}
+2025-04-03 23:27:47,663 - INFO - COMMIT
+2025-04-03 23:27:47,665 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:28:46 CST)" executed successfully
+2025-04-03 23:28:09,230 - INFO - Running job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:29:09 CST)" (scheduled at 2025-04-03 23:28:09.225049+08:00)
+2025-04-03 23:28:10,237 - INFO - System CPU Usage: 19.5%, Memory Usage: 66.3%
+2025-04-03 23:28:10,237 - INFO - BEGIN (implicit)
+2025-04-03 23:28:10,238 - INFO - INSERT INTO system_metrics (created_at, cpu_usage, memory_usage) VALUES (%(created_at)s, %(cpu_usage)s, %(memory_usage)s)
+2025-04-03 23:28:10,238 - INFO - [cached since 180s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 28, 10, 237392), 'cpu_usage': 19.5, 'memory_usage': 66.3}
+2025-04-03 23:28:10,240 - INFO - COMMIT
+2025-04-03 23:28:10,243 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:29:09 CST)" executed successfully

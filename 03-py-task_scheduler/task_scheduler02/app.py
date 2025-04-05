@@ -11,20 +11,23 @@ from apscheduler.triggers.cron import CronTrigger
 from apscheduler.triggers.interval import IntervalTrigger
 from apscheduler.triggers.date import DateTrigger
 from resource_monitor import monitor_resources
-from db_config import mysql_conn, mysql_cursor, redis_client
+from db_config import redis_client  # Only Redis is imported here
+from models import SessionLocal, TaskModel  # Use ORM for tasks
 
 # Flask app initialization
 app = Flask(__name__)
+
 # Secret key for JWT token encryption
 app.config['JWT_SECRET_KEY'] = 'super-secret-key'
-# Token expiration after 1 hour
+
+# JWT token expiration time (1 hour)
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
-jwt = JWTManager(app)  # JWT manager setup
 
+# Initialize JWT manager
+jwt = JWTManager(app)
 
-# Scheduler to manage task execution
+# Scheduler for task execution
 scheduler = BackgroundScheduler()
-
 
 # Task concurrency control
 MAX_CONCURRENT_TASKS = 5
@@ -42,19 +45,15 @@ logging.basicConfig(
 # ==========================
 #       AUTHENTICATION
 # ==========================
-
 @app.route('/login', methods=['POST'])
 def login():
     """
     Handle user login and return a JWT token.
-    Returns:
-        JSON response with access token or error message.
     """
     data = request.get_json()
     username = data.get('username')
     password = data.get('password')
 
-    # Simple username and password check (hardcoded for demonstration)
     if username == 'admin' and password == 'password':
         access_token = create_access_token(identity=username)
         return jsonify(access_token=access_token), 200
@@ -65,19 +64,16 @@ def login():
 # ==========================
 #      TASK MANAGEMENT
 # ==========================
-
 @app.route('/tasks', methods=['POST'])
-# @jwt_required()
+@jwt_required()
 def create_task():
     """
-    Create a new task with the given parameters.
+    Create a new task with the given parameters using ORM.
 
     - Validates input parameters
-    - Stores task in MySQL and Redis
-    - Adds task to the scheduler with appropriate trigger
-
-    Returns:
-        JSON success or failure message.
+    - Stores task in the "tasks" table via ORM
+    - Caches task in Redis
+    - Adds task to the scheduler with an appropriate trigger
     """
     data = request.get_json()
     task_type = data.get('task_type')
@@ -89,27 +85,29 @@ def create_task():
     priority = data.get('priority')
     dependencies = data.get('dependencies', [])
 
-    # Validate required fields
     if not all([task_type, task_name, task_id, scheduling_rule]):
         return jsonify({"msg": "Missing required fields"}), 400
 
-    # Check for circular dependencies
     if check_circular_dependency(task_id, dependencies):
         return jsonify({"msg": "Circular dependency detected"}), 400
 
-    # Insert task into MySQL
-    sql = """
-        INSERT INTO tasks (task_id, task_name, description, task_type, execution_params, scheduling_rule, priority, dependencies)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
-    """  # SQL: Add task details to the tasks table
-    val = (
-        task_id, task_name, description, task_type,
-        json.dumps(execution_params),
-        json.dumps(scheduling_rule),
-        priority, json.dumps(dependencies)
-    )
-    mysql_cursor.execute(sql, val)
-    mysql_conn.commit()
+    # Use ORM to create a new task record
+    session = SessionLocal()
+    try:
+        new_task = TaskModel(
+            task_id=task_id,
+            task_name=task_name,
+            description=description,
+            task_type=task_type,
+            execution_params=json.dumps(execution_params),
+            scheduling_rule=json.dumps(scheduling_rule),
+            priority=priority,
+            dependencies=json.dumps(dependencies)
+        )
+        session.add(new_task)
+        session.commit()
+    finally:
+        session.close()
 
     # Cache task in Redis
     redis_client.hset(task_id, mapping={
@@ -131,60 +129,61 @@ def create_task():
 
 
 @app.route('/tasks', methods=['GET'])
-# @jwt_required()
+@jwt_required()
 def get_tasks():
     """
-    Retrieve all tasks with details.
-
-    - Fetches task data from MySQL and Redis.
-    - Returns a list of tasks.
-
-    Returns:
-        JSON list of tasks.
+    Retrieve all tasks using ORM and combine with Redis status.
     """
-    mysql_cursor.execute("SELECT * FROM tasks")  # SQL: Get all tasks from the tasks table
-    tasks = mysql_cursor.fetchall()
+    session = SessionLocal()
+    try:
+        # Query all tasks via SQLAlchemy
+        tasks = session.query(TaskModel).all()
+    finally:
+        session.close()
 
     task_list = []
-    for task in tasks:
-        task_id = task[0]
-        task_info = {
-            "task_id": task_id,
-            "task_name": task[1],
-            "description": task[2],
-            "task_type": task[3],
-            "execution_params": json.loads(task[4]),
-            "scheduling_rule": json.loads(task[5]),
-            "priority": task[6],
-            "dependencies": json.loads(task[7]),
-            "status": redis_client.hget(task_id, "status").decode()
+    for t in tasks:
+        task_dict = {
+            "task_id": t.task_id,
+            "task_name": t.task_name,
+            "description": t.description,
+            "task_type": t.task_type,
+            "execution_params": json.loads(t.execution_params),
+            "scheduling_rule": json.loads(t.scheduling_rule),
+            "priority": t.priority,
+            "dependencies": json.loads(t.dependencies) if t.dependencies else [],
+            "status": redis_client.hget(t.task_id, "status") or b"unknown"
         }
-        task_list.append(task_info)
+        task_list.append(task_dict)
+
+    # Decode the status from bytes to string
+    for d in task_list:
+        if isinstance(d["status"], bytes):
+            d["status"] = d["status"].decode()
 
     return jsonify(task_list), 200
 
 
 @app.route('/tasks/<task_id>', methods=['DELETE'])
-# @jwt_required()
+@jwt_required()
 def delete_task(task_id):
     """
-    Delete an existing task by ID.
-
-    - Removes task from scheduler, Redis, and MySQL.
-
-    Args:
-        task_id (str): Task identifier.
-
-    Returns:
-        JSON success or failure message.
+    Delete an existing task by ID via ORM and remove from Redis + scheduler.
     """
     # Remove task from scheduler
     scheduler.remove_job(task_id)
 
-    # Delete task from MySQL
-    sql = "DELETE FROM tasks WHERE task_id = %s"  # SQL: Remove task by task_id
-    mysql_cursor.execute(sql, (task_id,))
-    mysql_conn.commit()
+    # Delete task using ORM
+    session = SessionLocal()
+    try:
+        obj = session.query(TaskModel).filter_by(task_id=task_id).first()
+        if obj:
+            session.delete(obj)
+            session.commit()
+        else:
+            return jsonify({"msg": "Task not found"}), 404
+    finally:
+        session.close()
 
     # Delete task from Redis
     redis_client.delete(task_id)
@@ -195,18 +194,9 @@ def delete_task(task_id):
 # ==========================
 #      TASK EXECUTION
 # ==========================
-
 def execute_task(task_id, retry_count=0, max_retries=3):
     """
     Execute the given task and manage retries if it fails.
-
-    Args:
-        task_id (str): Task identifier.
-        retry_count (int): Current retry attempt.
-        max_retries (int): Maximum retry limit.
-
-    Returns:
-        None. Logs task results and updates status in Redis.
     """
     global concurrent_tasks
     with concurrent_lock:
@@ -216,15 +206,15 @@ def execute_task(task_id, retry_count=0, max_retries=3):
         concurrent_tasks += 1
 
     task_info = redis_client.hgetall(task_id)
-    task_info = {key.decode(): value.decode() for key, value in task_info.items()}
+    task_info = {k.decode(): v.decode() for k, v in task_info.items()}
     task_type = task_info['task_type']
     execution_params = json.loads(task_info['execution_params'])
     dependencies = json.loads(task_info['dependencies'])
 
     # Check dependencies before executing
     for dep in dependencies:
-        dep_status = redis_client.hget(dep, "status").decode()
-        if dep_status != 'completed':
+        dep_status = redis_client.hget(dep, "status")
+        if dep_status is None or dep_status.decode() != 'completed':
             logging.info(f"Task {task_id} is waiting for dependency {dep} to complete.")
             with concurrent_lock:
                 concurrent_tasks -= 1
@@ -276,12 +266,6 @@ def execute_task(task_id, retry_count=0, max_retries=3):
 def get_trigger(scheduling_rule):
     """
     Generate a trigger for task scheduling based on the rule.
-
-    Args:
-        scheduling_rule (dict): Rule for task scheduling.
-
-    Returns:
-        Appropriate trigger object for apscheduler.
     """
     rule_type = scheduling_rule.get('type')
     if rule_type == 'fixed_time':
@@ -294,14 +278,7 @@ def get_trigger(scheduling_rule):
 
 def check_circular_dependency(task_id, dependencies):
     """
-    Check for circular dependencies in task dependencies.
-
-    Args:
-        task_id (str): Task identifier.
-        dependencies (list): List of task dependencies.
-
-    Returns:
-        bool: True if circular dependency found, otherwise False.
+    Check for circular dependencies.
     """
     visited = set()
     stack = [task_id]
@@ -311,26 +288,20 @@ def check_circular_dependency(task_id, dependencies):
         if current_task in visited:
             return True
         visited.add(current_task)
-        current_task_deps = json.loads(redis_client.hget(current_task, "dependencies").decode())
-        stack.extend(current_task_deps)
+        dep_json = redis_client.hget(current_task, "dependencies")
+        if dep_json:
+            sub_deps = json.loads(dep_json.decode())
+            stack.extend(sub_deps)
 
     return False
 
 
 def notify(task_id, status, error_info):
     """
-    Notify the user about task completion or failure.
-
-    Args:
-        task_id (str): Task identifier.
-        status (str): Task status (completed/failed).
-        error_info (str): Error details (if any).
-
-    Returns:
-        None.
+    Notify about task completion or failure.
     """
     task_info = redis_client.hgetall(task_id)
-    task_info = {key.decode(): value.decode() for key, value in task_info.items()}
+    task_info = {k.decode(): v.decode() for k, v in task_info.items()}
     task_name = task_info['task_name']
     message = f"Task {task_name} ({task_id}) {status}"
     if status == 'failed':
@@ -341,62 +312,73 @@ def notify(task_id, status, error_info):
 # ==========================
 #      HTML INTERFACES
 # ==========================
-
 @app.route('/ui', methods=['GET'])
 def index_ui():
-    """
-    Render the main interface for the task scheduler.
-    """
+    """Render the main interface for the task scheduler."""
     return render_template('index.html')
 
 
 @app.route('/ui/tasks', methods=['GET'])
-# @jwt_required()
+@jwt_required()
 def tasks_ui():
-    """
-    Display all tasks in an HTML table.
+    """Display all tasks in an HTML table using ORM data."""
+    session = SessionLocal()
+    try:
+        tasks = session.query(TaskModel).all()
+    finally:
+        session.close()
 
-    Returns:
-        Rendered HTML template with task details.
-    """
-    mysql_cursor.execute("SELECT * FROM tasks")
-    tasks = mysql_cursor.fetchall()
     task_list = []
-    for task in tasks:
-        task_id = task[0]
+    for t in tasks:
+        status_value = redis_client.hget(t.task_id, "status") or b"unknown"
+        status_str = status_value.decode()
         task_info = {
-            "task_id": task_id,
-            "task_name": task[1],
-            "description": task[2],
-            "task_type": task[3],
-            "execution_params": json.loads(task[4]),
-            "scheduling_rule": json.loads(task[5]),
-            "priority": task[6],
-            "dependencies": json.loads(task[7]),
-            "status": redis_client.hget(task_id, "status").decode()
+            "task_id": t.task_id,
+            "task_name": t.task_name,
+            "description": t.description,
+            "task_type": t.task_type,
+            "execution_params": json.loads(t.execution_params) if t.execution_params else {},
+            "scheduling_rule": json.loads(t.scheduling_rule) if t.scheduling_rule else {},
+            "priority": t.priority,
+            "dependencies": json.loads(t.dependencies) if t.dependencies else [],
+            "status": status_str
         }
         task_list.append(task_info)
+
     return render_template('tasks.html', tasks=task_list)
 
 
 @app.route('/ui/metrics', methods=['GET'])
-# @jwt_required()
+@jwt_required()
 def metrics_ui():
-    """
-    Show system resource metrics from the database.
+    """Show system resource metrics from the database via ORM."""
+    session = SessionLocal()
+    try:
+        data = session.query(TaskModel).all()  # This is for tasks, but we want metrics, so let's fetch SystemMetric
+    finally:
+        session.close()
 
-    Returns:
-        Rendered HTML template with system metrics.
-    """
-    mysql_cursor.execute("SELECT created_at, cpu_usage, memory_usage FROM system_metrics ORDER BY created_at DESC LIMIT 10")
-    metrics_data = mysql_cursor.fetchall()
+    # Let's correct that to show system metrics:
+    # Or we can do a separate route for the actual system metrics table
+    # For demonstration, we can query the SystemMetric model:
+    from models import SystemMetric
+    session = SessionLocal()
+    try:
+        metrics = session.query(SystemMetric).order_by(SystemMetric.id.desc()).limit(10).all()
+    finally:
+        session.close()
+
+    # Prepare data for the template
+    metrics_data = []
+    for m in metrics:
+        metrics_data.append([m.created_at, m.cpu_usage, m.memory_usage])
+
     return render_template('metrics.html', metrics=metrics_data)
 
 
 # ==========================
 #    SCHEDULE MONITORING
 # ==========================
-# Schedule the resource monitor to run every 60 seconds
 scheduler.add_job(
     monitor_resources,
     IntervalTrigger(seconds=60),
@@ -404,15 +386,9 @@ scheduler.add_job(
     max_instances=1
 )
 
-
-
-
-
-
 # ==========================
 #        MAIN ENTRY
 # ==========================
-
 if __name__ == '__main__':
     scheduler.start()
     app.run(debug=True)
