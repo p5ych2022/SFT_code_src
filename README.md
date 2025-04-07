@@ -22,3 +22,6 @@
   - 租赁管理
   - DHCP 选项配置
   - 数据包处理
+- 06-py-search_engine
+  - crawl
+  - whoosh for seaech

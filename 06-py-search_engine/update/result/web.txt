@@ -1,0 +1,39 @@
+=== Found in URL: https://psych.green ===
+Prove: web
+Prove: web基础
+Prove: NepCTF-2023-web部分writeup
+Prove: 巅峰极客2023-web-hellosql-wp
+Prove: 第五届安洵杯-2022-web-writeup
+Prove: 强网拟态-2022-web-部分wp(未完待续)
+Prove: ciscn-2023-web-部分writeup
+Prove: CNSS-2022-招新writeup-web-部分题目
+
+=== Found in URL: https://psych.green/ ===
+Prove: web
+Prove: web基础
+Prove: NepCTF-2023-web部分writeup
+Prove: 巅峰极客2023-web-hellosql-wp
+Prove: 第五届安洵杯-2022-web-writeup
+Prove: 强网拟态-2022-web-部分wp(未完待续)
+Prove: ciscn-2023-web-部分writeup
+Prove: CNSS-2022-招新writeup-web-部分题目
+
+=== Found in URL: https://psych.green/about/ ===
+Prove: 主业是web安全小黑子，想学开发和逆向但是根本鞋不费···
+Prove: CTF web
+
+=== Found in URL: https://psych.green/tags/ ===
+Prove: web
+Prove: web基础
+
+=== Found in URL: https://psych.green/categories/ ===
+Prove: web
+Prove: web基础
+
+=== Found in URL: https://psych.green/tags/CTF/ ===
+Prove: NepCTF-2023-web部分writeup
+Prove: 巅峰极客2023-web-hellosql-wp
+Prove: 第五届安洵杯-2022-web-writeup
+Prove: 强网拟态-2022-web-部分wp(未完待续)
+Prove: ciscn-2023-web-部分writeup
+
