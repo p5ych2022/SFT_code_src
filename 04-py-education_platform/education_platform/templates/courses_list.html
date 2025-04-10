@@ -1,0 +1,14 @@
+<!-- templates/courses_list.html -->
+
+{% block content %}
+<h1>课程列表</h1>
+<ul>
+  {% for course in courses %}
+    <li>
+      <strong>{{ course.title }}</strong>
+      — 教师: {{ course.teacher.username }}
+      {% if course.category %} — 分类: {{ course.category.name }}{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -947,3 +947,15 @@ FROM tasks
 2025-04-03 23:28:10,238 - INFO - [cached since 180s ago] {'created_at': datetime.datetime(2025, 4, 3, 23, 28, 10, 237392), 'cpu_usage': 19.5, 'memory_usage': 66.3}
 2025-04-03 23:28:10,240 - INFO - COMMIT
 2025-04-03 23:28:10,243 - INFO - Job "monitor_resources (trigger: interval[0:01:00], next run at: 2025-04-03 23:29:09 CST)" executed successfully
+2025-04-08 15:31:59,783 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-08 15:31:59,784 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-08 15:31:59,784 - INFO - Scheduler started
+2025-04-08 15:31:59,898 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-08 15:31:59,898 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-08 15:31:59,899 - INFO -  * Restarting with stat
+2025-04-08 15:32:00,399 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-08 15:32:00,400 - INFO - Added job "monitor_resources" to job store "default"
+2025-04-08 15:32:00,400 - INFO - Scheduler started
+2025-04-08 15:32:00,425 - WARNING -  * Debugger is active!
+2025-04-08 15:32:00,436 - INFO -  * Debugger PIN: 689-429-199

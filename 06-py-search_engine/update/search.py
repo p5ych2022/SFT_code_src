@@ -9,6 +9,9 @@ from whoosh.fields import Schema, ID, TEXT, STORED
 from whoosh.index import create_in, open_dir
 from whoosh.analysis import StemmingAnalyzer
 from whoosh.qparser import QueryParser
+import sys
+
+sys.setrecursionlimit(200000)  # or some higher number
 
 
 def creat_or_open_index(index_dir="search_index"):
@@ -53,12 +56,10 @@ def parse_page(url):
     try:
         headers = {
             'User-Agent': (
-                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                'AppleWebKit/537.36 (KHTML, like Gecko) '
-                'Chrome/91.0.4472.124 Safari/537.36'
+                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
             )
         }
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers)
         if response.status_code == 200:
             soup = BeautifulSoup(response.text, 'html.parser')
             page_title = soup.title.string if soup.title else ""
@@ -116,18 +117,20 @@ def crawl_pages_and_index(start_url, max_pages, index_dir="search_index"):
                 writer = ix.writer()
                 writer.add_document(
                     url=page_info['url'],
-                    title=page_info['title'],
-                    content=page_info['content'],
+                    title=str(page_info['title']),
+                    content=page_info['content'][:100],
                     description=page_info['description']
                 )
                 writer.commit()
-                pages_crawled += 1
+
             except Exception as e:
                 print(f"Error writing to index for {current_url}: {e}")
+            finally:
+                pages_crawled += 1
             for link in page_info['links']:
                 if link not in visited:
                     queue.append(link)
-        time.sleep(0.5)
+        time.sleep(1)
     print(f"Crawling complete. {pages_crawled} pages indexed.")
 
 
