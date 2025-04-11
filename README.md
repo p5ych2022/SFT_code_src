@@ -24,4 +24,11 @@
   - 数据包处理
 - 06-py-search_engine
   - crawl
-  - whoosh for seaech
+  - whoosh for index and search
+- 07-py-education_platform_pro
+  - 使用 Django 作为后端框架
+  - 使用 vue 作为前端框架
+  - Mysql 存数据
+  - Redis 缓存
+  - RESTful API 接口
+  - 响应式设计
